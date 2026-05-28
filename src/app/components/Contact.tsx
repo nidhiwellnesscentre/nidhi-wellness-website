@@ -244,7 +244,7 @@ export function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="mt-8 p-6 bg-gradient-to-br from-emerald-50 to-blue-50 rounded-xl"
+              className="mt-2 p-6 bg-gradient-to-br from-emerald-50 to-blue-50 rounded-xl"
             >
               <h4 className="mb-3 text-gray-900">What Happens Next?</h4>
               <ul className="space-y-2 text-gray-600">
