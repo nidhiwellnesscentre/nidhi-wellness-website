@@ -9,6 +9,10 @@ import before3 from "../../imports/before3.jpeg";
 import after3 from "../../imports/after3.jpeg";
 import before4 from "../../imports/before4.jpeg";
 import after4 from "../../imports/after4.jpeg"; 
+import before5 from "../../imports/before5.jpeg";
+import after5 from "../../imports/after5.jpeg"; 
+import before6 from "../../imports/before6.jpeg";
+import after6 from "../../imports/after6.jpeg"; 
 export function Transformations() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
   // Easy to add transformation images - just add objects to this array
@@ -20,7 +24,7 @@ export function Transformations() {
       // Then use: before: before1
       before: before1,
       after: after1,
-      result: "Lost 20 kg in 3 months",
+      result: "Lost 22 kg in 3 months",
       testimonial: "I never thought weight loss could feel this manageable. Highly supportive team and great results."
     },
     {
@@ -43,6 +47,20 @@ export function Transformations() {
       after: after4,
       result: "Lost 10 kg in 2 months",
       testimonial: "Amazing experience! I lost inches, gained confidence, and built healthier habits."
+    },
+    {
+      id: 5,
+      before: before5,
+      after: after5,
+      result: "Lost 10 kg in 3 months",
+      testimonial: "Life-changing experience! I feel more confident and energized than ever before."
+    },
+    {
+      id: 6,
+      before: before6,
+      after: after6,
+      result: "Lost 20 kg in 3 months",
+      testimonial: "I've never felt better! The support and guidance were invaluable."
     },
     // ADD MORE TRANSFORMATIONS HERE - just copy the format above
   ];

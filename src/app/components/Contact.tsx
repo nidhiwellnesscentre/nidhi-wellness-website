@@ -33,7 +33,7 @@ export function Contact() {
   };
 
   const handleOpenMaps = () => {
-    const address = 'Ganesh Nagar, Wadgoansheri, Pune, Maharashtra, India';
+    const address = 'N 73°55, 18°33\'19.5, 39.7\'E, Pune, Maharashtra 411014';
     window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`, '_blank');
   };
 
