@@ -154,6 +154,7 @@ export function Contact() {
                 </motion.button>
               </div>
             </div>
+           </motion.div>
 
           {/* Contact Form */}
           <motion.div
@@ -266,7 +267,6 @@ export function Contact() {
                 ))}
               </ul>
             </motion.div>
-          </motion.div>
         </div>
       </div>
     </section>
