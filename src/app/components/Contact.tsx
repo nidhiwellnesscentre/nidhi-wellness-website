@@ -154,8 +154,35 @@ export function Contact() {
                 </motion.button>
               </div>
             </div>
-           </motion.div>
-
+          <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="mt-2 p-6 bg-gradient-to-br from-emerald-50 to-blue-50 rounded-xl"
+            >
+              <h4 className="mb-3 text-gray-900">What Happens Next?</h4>
+              <ul className="space-y-2 text-gray-600">
+                {[
+                  "We'll contact you within 24 hours to discuss your goals",
+                  'Get a personalized fitness and nutrition plan',
+                  'Start your transformation with daily support',
+                ].map((text, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 + index * 0.1 }}
+                    className="flex items-start gap-2"
+                  >
+                    <span className="text-emerald-600 mt-1">{index + 1}.</span>
+                    <span>{text}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.div>
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -239,34 +266,6 @@ export function Contact() {
               </div>
             </form>
           </motion.div>
-<motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="mt-2 p-6 bg-gradient-to-br from-emerald-50 to-blue-50 rounded-xl"
-            >
-              <h4 className="mb-3 text-gray-900">What Happens Next?</h4>
-              <ul className="space-y-2 text-gray-600">
-                {[
-                  "We'll contact you within 24 hours to discuss your goals",
-                  'Get a personalized fitness and nutrition plan',
-                  'Start your transformation with daily support',
-                ].map((text, index) => (
-                  <motion.li
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4 + index * 0.1 }}
-                    className="flex items-start gap-2"
-                  >
-                    <span className="text-emerald-600 mt-1">{index + 1}.</span>
-                    <span>{text}</span>
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
         </div>
       </div>
     </section>
